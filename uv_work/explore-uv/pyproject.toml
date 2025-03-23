@@ -1,0 +1,23 @@
+[project]
+name = "explore-uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "farhanpaf05", email = "farhanpaf05@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm>=1.59.7",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+explore-uv = "explore_uv:main"
+farhan = "explore_uv.hello:greet" 
+imad = "explore_uv.decorator:say_hello_cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
